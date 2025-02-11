@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 export const FormClient = () => {
 
-    const [client_name, setName] = useState("")
+    const [name, setName] = useState("")
     const [email, setEmail] = useState("")
 
     const baseUrl = import.meta.env.VITE_BASE_URL
@@ -22,7 +22,7 @@ export const FormClient = () => {
         const newUrl = `${baseUrl}${endPoint}`
 
         const client = {
-            client_name, 
+            name, 
             email
         }
 

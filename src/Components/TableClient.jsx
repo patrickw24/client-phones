@@ -33,9 +33,9 @@ export const TableClient = () => {
                 <tbody>
                     {
                         clients.map((item) => (
-                            <tr key={item.client_id}>
-                                <td>{item.client_id}</td>
-                                <td>{item.client_name}</td>
+                            <tr key={item.id}>
+                                <td>{item.id}</td>
+                                <td>{item.name}</td>
                                 <td>{item.email}</td>
                             </tr>
                         ))
